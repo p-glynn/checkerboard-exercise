@@ -11,10 +11,10 @@ for (i=0; i<1600; i++) {
   tile.style.float = "left";
   tile.style.paddingBottom = "2%";
   tileArr.push(tile)
-  tile.style.backgroundColor = getRandomColor();
+  tile.style.backgroundColor = randomColor();
 }
 
-function getRandomColor() {
+function randomColor() {
 var letters = '0123456789ABCDEF';
 var color = '#';
 for (var i = 0; i < 6; i++) {
@@ -28,9 +28,8 @@ for(var i=0;i<tileArr.length;i++){
 }
 
 function tileReplace(){
-  // var randoC = getRandomColor();
   var randIndex = Math.ceil(Math.random()*tileArr.length-1);
-  var newTileColor = tileArr[randIndex].style.backgroundColor = getRandomColor();
+  var newTileColor = tileArr[randIndex].style.backgroundColor = randomColor();
 }
 
 var intervalID = window.setInterval(tileReplace, .00001);
