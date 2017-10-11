@@ -8,10 +8,6 @@ for (i=0; i<81; i++) {
   tile.style.float = "left";
   tile.style.paddingBottom = "11.1%";
 
-  if (i % 2 === 0) {
-    tile.style.backgroundColor = "red";
-  } else {
-    tile.style.backgroundColor = "Black";
-  }
+
 
 }
